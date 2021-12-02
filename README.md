@@ -1,2 +1,2 @@
-# webpack-babel-eslint-template
-webpack-babel-eslint-template
+# ps-i-pendo
+A backend client for interacting with Pendo's API endpoints
