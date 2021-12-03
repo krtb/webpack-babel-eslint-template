@@ -1,7 +1,13 @@
-import {Greeter} from './greeter';
+import express from 'express';
 
-let kurt
-let greeter  :any = new Greeter("Cecil");
-let greeting :any = greeter.getGreeting();
+const app: express.Application = express();
 
-console.log(greeting);
+const port = 3000;
+
+app.get('/', (_req, _res) => {
+  _res.send('TypeScript Wiht Expresss');
+});
+
+app.listen(port, () => {
+  console.log(`TypeScript with Expresshttp://localhost:${port}/`);
+});
